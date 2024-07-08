@@ -9,9 +9,17 @@ int main(){
     float result; 
 
     // Write your code here
-    
+    int sum = 0;
+    int length = sizeof(nums) / sizeof(nums[0]);
+    for (int i = 0; i < length; i++){
+        std::cout << "number is " << i << std::endl;
+        sum += nums[i];
+    }
+    result = (float) sum / length;
     std::cout << "The average is " << result << std::endl;
     
     std::cout << std::endl << std::endl;
+
+
     return (0);
 }
